@@ -14,15 +14,16 @@ Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens an
 Optional Value Lists (and one table for Value List reference) are not required, but streamlineProfile creation on the dashboard
 
 
+'
 
-
+'
 
 
 ---
 
 
 
-##Use Case 1
+###Use Case 1
 **Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call**
 
 1.	 Open this file, and create and name an Authentication Profile on the Dashboard.
@@ -43,7 +44,7 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 '
 
 
-##Use Case 2
+###Use Case 2
 **Import the components of this file into your solution.**  
 (do not re-name anything until you have fully tested it in your own solution)
 
