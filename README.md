@@ -3,7 +3,7 @@ Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens an
 
 
 
-##A Simple Dashboard And A Single Script To Call, Provides FileMaker Developers With A Powerful Tool!
+## A Simple Dashboard And A Single Script To Call, Provides FileMaker Developers With A Powerful Tool!
 *	Create and Manage multiple Google Account Profiles, each with multiple variations of privileges for that Account
 
 *	Present your users with the Googles Login Page, followed by the Google page which prompts users to 'allow this app access to your Google Account Data'
@@ -14,16 +14,8 @@ Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens an
 Optional Value Lists (and one table for Value List reference) are not required, but streamlineProfile creation on the dashboard
 
 
-'
 
-'
-
-
----
-
-
-
-###Use Case 1
+### Use Case 1
 **Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call**
 
 1.	 Open this file, and create and name an Authentication Profile on the Dashboard.
@@ -39,9 +31,6 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 	*	Also, open and read the comments in the Script: OAuth_Processor
 
 
-'
-
-'
 
 
 ###Use Case 2
@@ -74,15 +63,10 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 	*	Here you will find an example use case
 	*	Also, open and read the comments in the Script: OAuth_Processor
 
-'
 
-'
-
-----
-'
 
 ##CODING PHILOSOPHY:
-The 'Non-User Facing' aspects of this solution, as with everything I do in FileMaker, is written in consideration of the next developer  
+The Scripts and Calculations in this solution, as with everything I do in FileMaker, is written in consideration of the next developer  
 With that in mind:
 
 - **Calculations** are written in the vernacular taught to my by my 5th grade algebra teacher: **SHOW YOUR WORK**  
@@ -98,14 +82,9 @@ they are a powerful tool that work best when they are used as little as possible
 and, in my opinion, should only be used by the Lead, or Primary Developer (as with Global Variables)
 
 
-'
 
-'
 
-----
-'
-
-##TODO:
+###TODO:
 A second set of scripts using Custom Functions, and accepting all the required values passed as Parameters,
 has been pushed back for the next release, pending feedback received by this initial release.
 
