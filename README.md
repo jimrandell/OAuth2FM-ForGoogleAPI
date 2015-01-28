@@ -1,9 +1,10 @@
-# OAuth2FM-ForGoogleAPI
 Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens and Authentication.
+[![OAuth2FM-ForGoogleAPI](https://raw.githubusercontent.com/jimrandell/OAuth2FM-ForGoogleAPI/master/OAuth2FM_Logo1.png)](http://jimrandell.com)  
 
 
 
-## A Simple Dashboard And A Single Script To Call, Provides FileMaker Developers With A Powerful Tool!
+
+### A Simple Dashboard And A Single Script To Call, Provides FileMaker Developers With A Powerful Tool!
 *	Create and Manage multiple Google Account Profiles, each with multiple variations of privileges for that Account
 
 *	Present your users with the Googles Login Page, followed by the Google page which prompts users to 'allow this app access to your Google Account Data'
