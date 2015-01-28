@@ -34,7 +34,7 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 
 
 ###Use Case 2
-** Import the components of this file into your solution. **  
+**Import the components of this file into your solution.**  
 (do not re-name anything until you have fully tested it in your own solution)
 
 1.	 Import the OAuthProfiles Table (or copy it if you have FMP Advanced)  
