@@ -46,99 +46,16 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 <h3>
 <a id="use-case-1" class="anchor" href="#use-case-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 1</h3>
 
-<p><strong>Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call</strong></p>
-
-<ol>
-<li>
-<p>Open this file, and create and name an Authentication Profile on the Dashboard.</p>
-
 <ul>
-<li>  comprehensive help is provided on the Layout, explaining exactly how to populate the fields</li>
+<li>  Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call.</li>
 </ul>
-</li>
-<li>
-<p>Call the OAuth_Processor Script from inside your solution, the script returns the valid Token(s) required to make a Google API Call</p>
-
-<ul>
-<li>  Optionaly, include the Profile Name as the Script Parameter</li>
-<li>  Passing no Parameter will use the Profile in the Active record from the Profile Table </li>
-<li>  additional documentation is found in the Comments of the OAuth_Processor Script (and on-screen help)</li>
-</ul>
-</li>
-<li>
-<p>Open the OAuth_Example_APIcall Script in the Examples and Tests Folder</p>
-
-<ul>
-<li>  Here you will find an example use case</li>
-<li>  Also, open and read the comments in the Script: OAuth_Processor</li>
-</ul>
-</li>
-</ol>
 
 <h3>
 <a id="use-case-2" class="anchor" href="#use-case-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 2</h3>
 
-<p><strong>Import the components of this file into your solution.</strong><br>
-(do not re-name anything until you have fully tested it in your own solution)</p>
-
-<ol>
-<li>
-<p>Import the OAuthProfiles Table (or copy it if you have FMP Advanced)  </p>
-
 <ul>
-<li>  Open your FileMaker file, Select Manage&gt;Databases from the File Menu</li>
-<li>  Select the 'Tables' Tab, click the 'Import...' button, and select the OAuthProfiles Table from this file.</li>
+<li>  Import the components of this file into your solution.</li>
 </ul>
-</li>
-<li>
-<p>Create two Layouts for the OAuthProfiles Table Occurence, name them "OAuthProfiles_Dashboard" and "OAuthProfiles_WVpopup"</p>
-
-<ul>
-<li>  Optionally, incorporate the Value Lists Table
-
-<ul>
-<li>  Import the OAuthScopes Table the same you you imported the OAuthProfiles</li>
-<li>  Recreate the Value Lists in your own file, exactly as they exist in this one</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Import the OAuth2FM Scripts Folder into your Modules Scripts Folder: (or copy it if you have FMP Advanced)</p>
-
-<ul>
-<li>  Open your FileMaker file, Select Manage&gt;Scripts from the File Menu </li>
-<li>  Click the 'Import...' button, and select the OAuth2FM Scripts Folder</li>
-<li>  Move the OAuth2FM Scripts Folder into your Modules Scripts Folder
-
-<ul>
-<li>  If you dont have a Modules Scripts Folder, Create one (a Scripts Folder Called "Modules")</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Paste the Objects from the 2 Layouts</p>
-
-<ul>
-<li>  Go to the OAuthProfiles_Dashboard Layout in this file, Enter Layout Mode, Select All,and Copy
-
-<ul>
-<li>  Go to the OAuthProfiles_Dashboard Layout in YOUR file, Enter Layout Mode, Select All, Delete, then Paste</li>
-<li>  Do the same for the OAuthProfiles_WVpopup</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Follow steps 1, 2, and 3 as described in Use Case 1</p>
-
-<ul>
-<li>  Here you will find an example use case</li>
-<li>  Also, open and read the comments in the Script: OAuth_Processor</li>
-</ul>
-</li>
-</ol>
 
 <hr>
 
