@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Oauth2fm-ForGoogleAPI by jimrandell</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Oauth2fm-ForGoogleAPI</h1>
+          <h2>Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens and Authentication.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/jimrandell/OAuth2FM-ForGoogleAPI/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/jimrandell/OAuth2FM-ForGoogleAPI/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/jimrandell/OAuth2FM-ForGoogleAPI" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="oauth2fm-forgoogleapi" class="anchor" href="#oauth2fm-forgoogleapi" aria-hidden="true"><span class="octicon octicon-link"></span></a>OAuth2FM-ForGoogleAPI</h1>
+
+<p>Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens and Authentication.</p>
+
+<h2>
+<a id="a-simple-dashboard-and-a-single-script-to-call-provides-filemaker-developers-with-a-powerful-tool" class="anchor" href="#a-simple-dashboard-and-a-single-script-to-call-provides-filemaker-developers-with-a-powerful-tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Simple Dashboard And A Single Script To Call, Provides FileMaker Developers With A Powerful Tool!</h2>
+
+<ul>
+<li><p>Create and Manage multiple Google Account Profiles, each with multiple variations of privileges for that Account</p></li>
+<li><p>Present your users with the Googles Login Page, followed by the Google page which prompts users to 'allow this app access to your Google Account Data'</p></li>
+<li><p>Ready to use as a separate file with your solution - Simply Call 1 Script</p></li>
+<li><p>Incorporate into your own solution** - using 2 Layouts, 1 Table, and 1 Script (with 2 subscripts)<br>
+Optional Value Lists (and one table for Value List reference) are not required, but streamlineProfile creation on the dashboard</p></li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="use-case-1" class="anchor" href="#use-case-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 1</h3>
+
+<p><strong>Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call</strong></p>
+
+<ol>
+<li>
+<p>Open this file, and create and name an Authentication Profile on the Dashboard.</p>
+
+<ul>
+<li>  comprehensive help is provided on the Layout, explaining exactly how to populate the fields</li>
+</ul>
+</li>
+<li>
+<p>Call the OAuth_Processor Script from inside your solution, the script returns the valid Token(s) required to make a Google API Call</p>
+
+<ul>
+<li>  Optionaly, include the Profile Name as the Script Parameter</li>
+<li>  Passing no Parameter will use the Profile in the Active record from the Profile Table </li>
+<li>  additional documentation is found in the Comments of the OAuth_Processor Script (and on-screen help)</li>
+</ul>
+</li>
+<li>
+<p>Open the OAuth_Example_APIcall Script in the Examples and Tests Folder</p>
+
+<ul>
+<li>  Here you will find an example use case</li>
+<li>  Also, open and read the comments in the Script: OAuth_Processor</li>
+</ul>
+</li>
+</ol>
+
+<h3>
+<a id="use-case-2" class="anchor" href="#use-case-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 2</h3>
+
+<p><strong>Import the components of this file into your solution.</strong><br>
+(do not re-name anything until you have fully tested it in your own solution)</p>
+
+<ol>
+<li>
+<p>Import the OAuthProfiles Table (or copy it if you have FMP Advanced)  </p>
+
+<ul>
+<li>  Open your FileMaker file, Select Manage&gt;Databases from the File Menu</li>
+<li>  Select the 'Tables' Tab, click the 'Import...' button, and select the OAuthProfiles Table from this file.</li>
+</ul>
+</li>
+<li>
+<p>Create two Layouts for the OAuthProfiles Table Occurence, name them "OAuthProfiles_Dashboard" and "OAuthProfiles_WVpopup"</p>
+
+<ul>
+<li>  Optionally, incorporate the Value Lists Table
+
+<ul>
+<li>  Import the OAuthScopes Table the same you you imported the OAuthProfiles</li>
+<li>  Recreate the Value Lists in your own file, exactly as they exist in this one</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Import the OAuth2FM Scripts Folder into your Modules Scripts Folder: (or copy it if you have FMP Advanced)</p>
+
+<ul>
+<li>  Open your FileMaker file, Select Manage&gt;Scripts from the File Menu </li>
+<li>  Click the 'Import...' button, and select the OAuth2FM Scripts Folder</li>
+<li>  Move the OAuth2FM Scripts Folder into your Modules Scripts Folder
+
+<ul>
+<li>  If you dont have a Modules Scripts Folder, Create one (a Scripts Folder Called "Modules")</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Paste the Objects from the 2 Layouts</p>
+
+<ul>
+<li>  Go to the OAuthProfiles_Dashboard Layout in this file, Enter Layout Mode, Select All,and Copy
+
+<ul>
+<li>  Go to the OAuthProfiles_Dashboard Layout in YOUR file, Enter Layout Mode, Select All, Delete, then Paste</li>
+<li>  Do the same for the OAuthProfiles_WVpopup</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Follow steps 1, 2, and 3 as described in Use Case 1</p>
+
+<ul>
+<li>  Here you will find an example use case</li>
+<li>  Also, open and read the comments in the Script: OAuth_Processor</li>
+</ul>
+</li>
+</ol>
+
+<hr>
+
+<h4>
+<a id="coding-philosophy" class="anchor" href="#coding-philosophy" aria-hidden="true"><span class="octicon octicon-link"></span></a>CODING PHILOSOPHY:</h4>
+
+<p>The Scripts and Calculations in this solution, as with everything I do in FileMaker, is written in consideration of the next developer<br>
+With that in mind:</p>
+
+<ul>
+<li>
+<strong>Calculations</strong> are written in the vernacular taught to my by my 5th grade algebra teacher: <strong>SHOW YOUR WORK</strong><br>
+To that end, I make extensive use of the LET Statement, to show the reader (you) my logical progression as I manipulate the values
+
+<ul>
+<li>  sometimes at the expense of brevity, but always to the benefit of clarity and safety, as well as for the consideration of those without access the FileMakerPro Advanced</li>
+</ul>
+</li>
+<li><p><strong>Global Variables</strong> are strictly avoided (and not used at all in this Module)
+they are a powerful tool that work best when they are used as little as possible</p></li>
+<li><p><strong>Scripted Finds</strong> are written out long (Enter Find Mode, Set Field, Perform Find)<br>
+(With few exceptions) this makes scripts easier to read and comprehend by other developers</p></li>
+<li><p><strong>Internal SQL</strong> calls are not used<br>
+and, in my opinion, should only be used by the Lead, or Primary Developer (as with Global Variables)</p></li>
+</ul>
+
+<hr>
+
+<h4>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO:</h4>
+
+<p>A second set of scripts using Custom Functions, and accepting all the required values passed as Parameters,
+has been pushed back for the next release, pending feedback received by this initial release.</p>
+        </section>
+
+        <footer>
+          Oauth2fm-ForGoogleAPI is maintained by <a href="https://github.com/jimrandell">jimrandell</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
