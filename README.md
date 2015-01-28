@@ -13,7 +13,7 @@ Make calls to GoogleAPI from FileMaker, and let this module handle the Tokens an
 *	Incorporate into your own solution** - using 2 Layouts, 1 Table, and 1 Script (with 2 subscripts)  
 Optional Value Lists (and one table for Value List reference) are not required, but streamlineProfile creation on the dashboard
 
-
+---
 
 ### Use Case 1
 **Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call**
@@ -34,7 +34,7 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 
 
 ###Use Case 2
-**Import the components of this file into your solution.**  
+** Import the components of this file into your solution. **  
 (do not re-name anything until you have fully tested it in your own solution)
 
 1.	 Import the OAuthProfiles Table (or copy it if you have FMP Advanced)  
@@ -64,8 +64,8 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 	*	Also, open and read the comments in the Script: OAuth_Processor
 
 
-
-##CODING PHILOSOPHY:
+---
+#### CODING PHILOSOPHY:
 The Scripts and Calculations in this solution, as with everything I do in FileMaker, is written in consideration of the next developer  
 With that in mind:
 
@@ -81,10 +81,10 @@ they are a powerful tool that work best when they are used as little as possible
 - **Internal SQL** calls are not used  
 and, in my opinion, should only be used by the Lead, or Primary Developer (as with Global Variables)
 
+---
 
 
-
-###TODO:
+#### TODO:
 A second set of scripts using Custom Functions, and accepting all the required values passed as Parameters,
 has been pushed back for the next release, pending feedback received by this initial release.
 
