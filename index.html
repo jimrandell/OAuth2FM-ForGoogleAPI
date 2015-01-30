@@ -31,30 +31,25 @@
         <p><a href="http://jimrandell.com"><img src="https://raw.githubusercontent.com/jimrandell/OAuth2FM-ForGoogleAPI/master/OAuth2FM_Logo1.png" alt="OAuth2FM-ForGoogleAPI"></a></p>
 
 <h2>
-<a id="a-simple-dashboard-and-a-single-script-provides-filemaker-developers-with-a-powerful-tool" class="anchor" href="#a-simple-dashboard-and-a-single-script-provides-filemaker-developers-with-a-powerful-tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Simple Dashboard And A Single Script, Provides FileMaker Developers With A Powerful Tool!</h2>
+<a id="a-simple-dashboard-and-a-single-script-provide-filemaker-developers-with-a-powerful-tool-to-handle-the-heavy-lifting-in-googles-oauth2" class="anchor" href="#a-simple-dashboard-and-a-single-script-provide-filemaker-developers-with-a-powerful-tool-to-handle-the-heavy-lifting-in-googles-oauth2" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Simple Dashboard And A Single Script Provide FileMaker Developers With A Powerful Tool To Handle The Heavy Lifting in Google’s OAuth2!</h2>
+
+<p>…No Plugins, No Custom Functions, Just FileMaker</p>
 
 <ul>
-<li><p>Create and Manage multiple Google Account Profiles, each with multiple variations of privileges for that Account</p></li>
-<li><p>Present your users with the Google's Login Page, followed by the Google page which prompts users to 'allow this app access to your Google Account Data'</p></li>
-<li><p>Ready to use as a separate file with your solution - Simply Call 1 Script</p></li>
-<li><p>Incorporate into your own solution** - using 2 Layouts, 1 Table, and 1 Script (with 2 subscripts)<br>
-Optional Value Lists (and one table for Value List reference) are not required, but streamline Profile creation on the dashboard</p></li>
+<li><p>Create and Manage multiple Google OAuth2 Account Profiles, each with multiple variations of privileges for that Account</p></li>
+<li><p>Present your users with Google’s Login Page, followed by Google’s Page prompting a user to ‘Allow Access To Your Google Account Data’</p></li>
+<li><p>Ready to use as a separate file with your solution – Simply Call 1 Script</p></li>
+<li><p>Incorporate into your own solution – using 2 Layouts, 1 Table, and 1 Script (with 2 subscripts)</p></li>
 </ul>
 
-<hr>
+<h2>
+<a id="---optional-value-lists-and-one-table-for-value-list-reference-are-not-required-but-streamline-profile-creation-on-the-dashboard" class="anchor" href="#---optional-value-lists-and-one-table-for-value-list-reference-are-not-required-but-streamline-profile-creation-on-the-dashboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>*   Optional Value Lists (and one table for Value List reference) are not required, but streamline Profile creation on the dashboard</h2>
 
 <h3>
-<a id="use-case-1" class="anchor" href="#use-case-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 1</h3>
+<a id="lots-of-help" class="anchor" href="#lots-of-help" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lots Of Help:</h3>
 
 <ul>
-<li>  Use this individual File as part of your overall solution, calling the OAuth_Processor Script like an API call.</li>
-</ul>
-
-<h3>
-<a id="use-case-2" class="anchor" href="#use-case-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Case 2</h3>
-
-<ul>
-<li>  Import the components of this file into your solution.</li>
+<li>  The HELP Buttons provide step by step instructions with annotated screen shots, so that creating a Google Developers Account, and obtaining your authentication Tokens, is as easy as Pi to the 2nd power!</li>
 </ul>
 
 <hr>
@@ -62,27 +57,29 @@ Optional Value Lists (and one table for Value List reference) are not required, 
 <h4>
 <a id="coding-philosophy" class="anchor" href="#coding-philosophy" aria-hidden="true"><span class="octicon octicon-link"></span></a>CODING PHILOSOPHY:</h4>
 
-<p>The Scripts and Calculations in this solution, as with everything I do in FileMaker, is written in consideration of the next developer<br>
+<p>The Scripts and Calculations in this solution, as with everything I do in FileMaker, are written for the next developer.<br>
 With that in mind:</p>
 
 <ul>
 <li>
 <strong>Calculations</strong> are written in the vernacular taught to my by my 5th grade algebra teacher: <strong>SHOW YOUR WORK</strong><br>
-To that end, I make extensive use of the LET Statement, to show the reader (you) my logical progression as I manipulate the values
+To that end, I make extensive use of the LET Statement, to show you, the reader, the logical progression of the values as they are manipulated and evolve.
 
 <ul>
-<li>  sometimes at the expense of brevity, but always to the benefit of clarity and safety, as well as for the consideration of those without access the FileMakerPro Advanced</li>
+<li>  …sometimes at the expense of brevity, but always to the benefit of clarity and safety, as well as for the consideration of those without access the FileMakerPro Advanced.</li>
 </ul>
 </li>
-<li><p><strong>Global Variables</strong> are strictly avoided (and not used at all in this Module)
-they are a powerful tool that work best when they are used as little as possible</p></li>
+<li><p><strong>Global Variables</strong> and <strong>Internal SQL Calls</strong> are strictly avoided (and not used at all in this Module)
+They are powerful tools, but they add complications to Interconnecting Modules and hinder portability.</p></li>
 <li><p><strong>Scripted Finds</strong> are written out long (Enter Find Mode, Set Field, Perform Find)<br>
 (With few exceptions) this makes scripts easier to read and comprehend by other developers</p></li>
-<li><p><strong>Internal SQL</strong> calls are not used<br>
-and, in my opinion, should only be used by the Lead, or Primary Developer (as with Global Variables)</p></li>
-</ul>
+<li>
+<p><strong>Scripts Are Well Documented</strong>, forming an overall, step by step narrative.  </p>
 
-<hr>
+<h2>
+<a id="liberal-use-of-white-space-is-made-separating-the-code-into-easily-digestible-chunks" class="anchor" href="#liberal-use-of-white-space-is-made-separating-the-code-into-easily-digestible-chunks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Liberal use of white space is made, separating the code into ‘easily digestible’ chunks.</h2>
+</li>
+</ul>
 
 <h4>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO:</h4>
