@@ -22,6 +22,7 @@
 
 
 ---
+
 #### CODING PHILOSOPHY:
 The Scripts and Calculations in this solution, as with everything I do in FileMaker, are written for the next developer.  
 With that in mind:
@@ -37,6 +38,7 @@ They are powerful tools, but they add complications to Interconnecting Modules a
 
 - **Scripts Are Well Documented**, forming an overall, step by step narrative.  
 Liberal use of white space is made, separating the code into ‘easily digestible’ chunks.
+
 
 ---
 
