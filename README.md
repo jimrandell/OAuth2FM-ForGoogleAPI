@@ -1,7 +1,7 @@
 [![OAuth2FM-ForGoogleAPI](https://raw.githubusercontent.com/jimrandell/OAuth2FM-ForGoogleAPI/master/OAuth2FM_Logo1.png)](http://jimrandell.com)
 
 ## A Simple Dashboard And A Single Script Provide FileMaker Developers With A Powerful Tool To Handle The Heavy Lifting in Google’s OAuth2!
-…No Plugins, No Custom Functions, Just FileMaker
+…No Plugins, No Custom Functions, Just FileMaker!
 
 ![](https://raw.githubusercontent.com/jimrandell/jimrandell.github.io/master/OAuth2FMscreenshot.png)
 
@@ -46,4 +46,3 @@ Liberal use of white space is made, separating the code into ‘easily digestibl
 #### TODO:
 A second set of scripts using Custom Functions, and accepting all the required values passed as Parameters,
 has been pushed back for the next release, pending feedback received by this initial release.
-

@@ -1,0 +1,6 @@
+﻿Timestamp	Filename	Error	Message
+2016-11-29 11:43:16.984 -0800	OAuth2FM.fmp12	0	*** Started consistency check of improperly closed file, total of 765 block(s) to check
+2016-11-29 11:43:17.084 -0800	OAuth2FM.fmp12	8432	Page 158 marked free but not in free list
+2016-11-29 11:43:17.085 -0800	OAuth2FM.fmp12	8432	Page 765 marked free but not in free list
+2016-11-29 11:43:17.085 -0800	OAuth2FM.fmp12	0	Reset maximum block sequence number to 60159
+2016-11-29 11:43:17.085 -0800	OAuth2FM.fmp12	0	*** Completed consistency check, checked 765 block(s)
